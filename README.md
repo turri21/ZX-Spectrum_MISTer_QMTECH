@@ -1,5 +1,4 @@
-# ltc2308_tape temporarily disabled in ZX-Spectrum.sv
-
+Fork's notes: ltc2308_tape temporarily disabled in ZX-Spectrum.sv
 
 # [ZX Spectrum](https://en.wikipedia.org/wiki/ZX_Spectrum) for MiSTer Platform
 
