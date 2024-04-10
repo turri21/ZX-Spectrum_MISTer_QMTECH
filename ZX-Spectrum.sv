@@ -1386,6 +1386,7 @@ wire ula_tape_in = tape_act ? ~tape_vin : tape_adc_act ? ~tape_adc : (ear_out | 
 
 wire tape_adc, tape_adc_act;
 
+/* DISABLED NO ADC ON QMTECH BOARD
 ltc2308_tape ltc2308_tape
 (
 	.clk(CLK_50M),
@@ -1393,6 +1394,7 @@ ltc2308_tape ltc2308_tape
 	.dout(tape_adc),
 	.active(tape_adc_act)
 );
+/*
 
 //////////////////  ARCH SET  //////////////////
 
