@@ -1385,7 +1385,7 @@ wire tape_aud    = ~status[1] & (tape_act ? ~tape_vin : tape_adc_act & ~tape_adc
 wire ula_tape_in = tape_act ? ~tape_vin : tape_adc_act ? ~tape_adc : (ear_out | (~status[7] & mic_out));
 
 wire tape_adc, tape_adc_act;
-/*
+
 ltc2308_tape ltc2308_tape
 (
 	.clk(CLK_50M),
@@ -1393,7 +1393,7 @@ ltc2308_tape ltc2308_tape
 	.dout(tape_adc),
 	.active(tape_adc_act)
 );
-*/
+
 //////////////////  ARCH SET  //////////////////
 
 reg       arch_set = 0;
