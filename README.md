@@ -1,4 +1,4 @@
-Fork's notes: ltc2308_tape reenabled in ZX-Spectrum.sv
+Fork's notes: ltc2308_tape permanently disabled in ZX-Spectrum.sv. No ADC on this board.
 
 # [ZX Spectrum](https://en.wikipedia.org/wiki/ZX_Spectrum) for MiSTer Platform
 
