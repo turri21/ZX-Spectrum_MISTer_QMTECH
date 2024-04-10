@@ -1394,7 +1394,7 @@ ltc2308_tape ltc2308_tape
 	.dout(tape_adc),
 	.active(tape_adc_act)
 );
-/*
+*/
 
 //////////////////  ARCH SET  //////////////////
 
