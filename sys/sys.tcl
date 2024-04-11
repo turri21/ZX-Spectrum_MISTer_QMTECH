@@ -199,9 +199,16 @@ set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SD_SPI*
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_CLK1_50
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_CLK2_50
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_CLK3_50
+
+# CLOCKS FOR MiSTer
+#set_location_assignment PIN_V11 -to FPGA_CLK1_50
+#set_location_assignment PIN_Y13 -to FPGA_CLK2_50
+#set_location_assignment PIN_E11 -to FPGA_CLK3_50
+
+#CLOCKS FOR MiSTer_QMTECH
 set_location_assignment PIN_V11 -to FPGA_CLK1_50
-set_location_assignment PIN_Y13 -to FPGA_CLK2_50
-set_location_assignment PIN_E11 -to FPGA_CLK3_50
+set_location_assignment PIN_E11 -to FPGA_CLK2_50
+set_location_assignment PIN_Y13 -to FPGA_CLK3_50
 
 #============================================================
 # HDMI
