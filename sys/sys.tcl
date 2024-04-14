@@ -1,5 +1,5 @@
+set_global_assignment -name DEVICE 5CSEMA6U23A7
 set_global_assignment -name FAMILY "Cyclone V"
-set_global_assignment -name DEVICE 5CSEBA6U23I7
 set_global_assignment -name DEVICE_FILTER_PACKAGE UFBGA
 set_global_assignment -name DEVICE_FILTER_PIN_COUNT 672
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 7
@@ -150,17 +150,14 @@ set_location_assignment PIN_AG23 -to SDRAM_DQ[14]
 #set_location_assignment PIN_AH3 -to SDRAM_DQ[15]
 set_location_assignment PIN_AH24 -to SDRAM_DQ[15]
 
-### MISSING PINS ###
-#set_location_assignment PIN_AG13 -to SDRAM_DQML
-#set_location_assignment PIN_AF13 -to SDRAM_DQMH
-####################
+################# MISSING PINS ####################
+# set_location_assignment PIN_AG10 -to SDRAM_CKE  #
+# set_location_assignment PIN_AG13 -to SDRAM_DQML #
+# set_location_assignment PIN_AF13 -to SDRAM_DQMH #
+###################################################
 
 #set_location_assignment PIN_AD20 -to SDRAM_CLK
 set_location_assignment PIN_AH19 -to SDRAM_CLK
-
-### MISSING PIN ###
-#set_location_assignment PIN_AG10 -to SDRAM_CKE
-###################
 
 #set_location_assignment PIN_AA19 -to SDRAM_nWE
 set_location_assignment PIN_AG14 -to SDRAM_nWE
@@ -308,4 +305,3 @@ set_global_assignment -name PRE_FLOW_SCRIPT_FILE "quartus_sh:sys/build_id.tcl"
 
 set_global_assignment -name CDF_FILE jtag.cdf
 set_global_assignment -name QIP_FILE sys/sys.qip
-
